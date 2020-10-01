@@ -1,0 +1,496 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+	font-family: "Open Sans";
+ }
+
+ h1,h2,h3,h4,h5,h6,
+ .navbar-item a,
+ a.navbar-brand {
+	 font-family: fira sans;
+ }
+
+ .jumbotron {
+	 position: relative;
+	 color: #cccccc;
+	 border-radius: 0;
+	 background: url(../img/arts5.jpg);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 overflow: hidden;
+ }
+
+ .jumbotron > .overlay {
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;  
+	 z-index: 1;
+	 position: absolute;
+	 background: rgba(0, 0, 0, 0.5);
+ }
+
+ .jumbotron > .container {
+	 position: relative;
+	 z-index: 2;
+ }
+
+.filter_box {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.filter_box img {
+    width: 100%;
+}
+
+.single-portfolio-item {
+    background: #fbfbfb;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+.single-portfolio-item h3 {
+    font-weight: 700;
+
+}
+
+.single-portfolio-item a {
+    color: #000;
+    display: block;
+    padding: 0;
+}
+
+.single-portfolio-item a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+/**/
+
+.tm .carousel {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.tm .carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 340px;
+}
+.tm .carousel .item a {
+	color: #eb7245;
+}
+.tm .carousel .img-box {
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.tm .carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.tm .carousel .testimonial {	
+	padding: 30px 0 10px;
+}
+.tm .carousel .overview {	
+	text-align: center;
+	padding-bottom: 5px;
+}
+.tm .carousel .overview b {
+	color: #333;
+	font-size: 15px;
+	text-transform: uppercase;
+	display: block;	
+	padding-bottom: 5px;
+}
+.tm .carousel .star-rating i {
+	font-size: 18px;
+	color: #ffdc12;
+}
+.tm .carousel .carousel-control {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    background: #999;
+    text-shadow: none;
+	top: 4px;
+}
+.tm .carousel-control i {
+	font-size: 20px;
+	margin-right: 2px;
+}
+.tm .carousel-control.left {
+	left: auto;
+	right: 40px;
+}
+.tm .carousel-control.right i {
+	margin-right: -2px;
+}
+.tm .carousel .carousel-indicators {
+	bottom: 15px;
+}
+.tm .carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
+}
+.tm .carousel-indicators li {	
+	background: #e2e2e2;
+	border-color: transparent;
+}
+.tm .carousel-indicators li.active {
+	border: none;
+	background: #888;		
+}
+
+/* Pricing Table */
+
+.pricingtbl .card-pricing.popular {
+    z-index: 1;
+    border: 3px solid #007bff;
+}
+.pricingtbl .card-pricing .list-unstyled li {
+    padding: .5rem 0;
+    color: #6c757d;
+}
+
+
+/* Slider */
+
+.slick-slide {
+	margin: 0px 20px;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-slider
+{
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+			user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+		touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.slick-list:focus
+{
+	outline: none;
+}
+.slick-list.dragging
+{
+	cursor: pointer;
+	cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+	-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+	display: table;
+	content: '';
+}
+.slick-track:after
+{
+	clear: both;
+}
+.slick-loading .slick-track
+{
+	visibility: hidden;
+}
+
+.slick-slide
+{
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+	float: right;
+}
+.slick-slide img
+{
+	display: block;
+}
+.slick-slide.slick-loading img
+{
+	display: none;
+}
+.slick-slide.dragging img
+{
+	pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+	display: block;
+}
+.slick-loading .slick-slide
+{
+	visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+
+/** contact **/
+
+.contact .inputBox{
+	position: relative;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+}
+
+.contact .inputBox .inputText{
+	position: absolute;
+    font-size: 24px;
+    line-height: 50px;
+    transition: .5s;
+    opacity: .5;
+}
+
+.contact .inputBox .input{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: none;
+    outline: none;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+
+}
+
+.contact .focus .inputText{
+	transform: translateY(-30px);
+	font-size: 18px;
+	opacity: 1;
+
+}
+
+.contact textarea{
+	height: 100px !important;
+}
+
+.contact .button{
+	width: 100%;
+    height: 50px;
+    border: none;
+	outline: none;
+}
+
+/* footer */
+.footer {
+    background: #222222 none repeat scroll 0 0;
+    border-top: 4px solid #0d91dd;
+    margin: 0;
+    padding: 20px 0;
+}
+.footer_dv {
+    width: 100%;
+}
+.footer_dv h4 {
+    color: #ccc;
+    font-family: roboto;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.footer_dv ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.footer_dv ul li:first-child {
+    border-top: medium none;
+    box-shadow: none;
+}
+.footer_dv ul li {
+    border-top: 1px solid #000;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2);
+    color: #ccc;
+    padding: 5px 0;
+}
+.footer_dv p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    text-align: justify;
+}
+
+.footer a {
+	color: #919da9;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #a5b1bd; 
+}
+
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-collapse {
+		height: 4rem;
+	}
+}
+
+.jumbotron {
+	padding-top: 6em;
+	height: 60vh;
+}
+
+.jumbotron .btn,
+.contact .btn {
+    padding: 10px 20px;
+    font-size: 20px;
+	border-radius: 0;
+}
+
+.section-header {
+	text-align: center;
+	margin: 2em 0 1em 0;
+	text-transform: uppercase;
+}
+
+.portfolio .card-body {
+	padding: 0 1.25rem;
+}
+
+.above-footer {
+	height: 5em;
+}
+
+.contact {
+	margin-top: 5em;
+}
+
+
+/**********************
+/***** Services *******
+/*********************/
+
+.servies section{
+	padding: 60px 0;
+}
+.services section .section-title{
+	text-align:center;
+	
+	margin-bottom:50px;
+	text-transform:uppercase;
+}
+#what-we-do{
+	background:#ffffff;
+}
+#what-we-do .card{
+	padding: 1rem!important;
+	border: none;
+	margin-bottom:1rem;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#what-we-do .card:hover{
+	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	-moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+#what-we-do .card .card-block{
+	padding-left: 50px;
+    position: relative;
+}
+#what-we-do .card .card-block a{
+	color: #007b5e !important;
+	font-weight:700;
+	text-decoration:none;
+}
+#what-we-do .card .card-block a i{
+	display:none;
+	
+}
+#what-we-do .card:hover .card-block a i{
+	display:inline-block;
+	font-weight:700;
+	
+}
+#what-we-do .card .card-block:before{
+	font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: #007b5e;
+    left: 0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+}
+#what-we-do .card .block-1:before{
+    content: "\f0e7";
+}
+#what-we-do .card .block-2:before{
+    content: "\f0eb";
+}
+#what-we-do .card .block-3:before{
+    content: "\f00c";
+}
+#what-we-do .card .block-4:before{
+    content: "\f209";
+}
+#what-we-do .card .block-5:before{
+    content: "\f0a1";
+}
+#what-we-do .card .block-6:before{
+    content: "\f218";
+}
+#what-we-do .card:hover .card-block:before{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);	
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
